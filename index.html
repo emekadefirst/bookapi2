@@ -4,169 +4,46 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tesla - Login</title>
-    <!-- Bootstrap CSS from CDN -->
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
-    <!-- Font Awesome for icons -->
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <title>Login with Google</title>
+    <script src="https://cdn.tailwindcss.com"></script>
     <script src="https://accounts.google.com/gsi/client" async defer></script>
-    <style>
-        body {
-            background-color: #f5f5f5;
-            font-family: 'Gotham', 'Helvetica Neue', Arial, sans-serif;
-        }
-
-        .login-container {
-            max-width: 400px;
-            background-color: white;
-            border-radius: 10px;
-            box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
-        }
-
-        .login-header {
-            padding: 30px 0;
-        }
-
-        .tesla-logo {
-            width: 120px;
-        }
-
-        .btn-tesla {
-            background-color: #171a20;
-            color: white;
-            border: none;
-            font-weight: 500;
-            padding: 12px;
-            border-radius: 4px;
-            width: 100%;
-            margin-bottom: 15px;
-        }
-
-        .btn-tesla:hover {
-            background-color: #393c41;
-            color: white;
-        }
-
-        .btn-google {
-            background-color: white;
-            color: #171a20;
-            border: 2px solid #171a20;
-            font-weight: 500;
-            padding: 10px;
-            border-radius: 4px;
-            width: 100%;
-        }
-
-        .btn-google:hover {
-            background-color: #f5f5f5;
-        }
-
-        .divider {
-            display: flex;
-            align-items: center;
-            margin: 20px 0;
-        }
-
-        .divider-line {
-            flex: 1;
-            height: 1px;
-            background-color: #ddd;
-        }
-
-        .divider-text {
-            padding: 0 15px;
-            color: #666;
-        }
-
-        .form-control {
-            padding: 12px;
-            border-radius: 4px;
-        }
-
-        .form-control:focus {
-            box-shadow: 0 0 0 2px rgba(0, 0, 0, 0.1);
-            border-color: #171a20;
-        }
-
-        .forgot-password {
-            color: #393c41;
-            text-decoration: none;
-        }
-
-        .forgot-password:hover {
-            text-decoration: underline;
-        }
-
-        .create-account {
-            color: #393c41;
-            text-decoration: none;
-            font-weight: 500;
-        }
-
-        .create-account:hover {
-            text-decoration: underline;
-        }
-
-        .background-image {
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
-                url("https://www.tesla.com/sites/default/files/blog_images/tesla_announcement_social.jpg") no-repeat center center;
-            background-size: cover;
-            z-index: -1;
-        }
-
-        .google-icon {
-            color: #4285F4;
-            margin-right: 10px;
-            font-size: 18px;
-        }
-    </style>
 </head>
 
-<body>
-    <div class="background-image"></div>
-    <div class="container d-flex justify-content-center align-items-center min-vh-100">
-        <div class="login-container p-4 p-md-5 w-100">
-            <div class="login-header text-center">
-                <svg class="tesla-logo" viewBox="0 0 342 35" xmlns="http://www.w3.org/2000/svg">
-                    <path
-                        d="M0 .1a9.7 9.7 0 0 0 7 7h11l.5.1v27.6h6.8V7.3L26 7h11a9.8 9.8 0 0 0 7-7H0zm238.6 0h-6.8v34.8H263a9.7 9.7 0 0 0 6-6.8h-30.3V0zm-52.3 6.8c3.6-1 6.6-3.8 7.4-6.9l-38.1.1v20.6h31.1v7.2h-24.4a13.6 13.6 0 0 0-8.7 7h39.9v-21h-31.2v-7h24zm116.2 28h6.7v-14h24.6v14h6.7v-21h-38zM85.3 7h26a9.6 9.6 0 0 0 7.1-7H78.3a9.6 9.6 0 0 0 7 7zm0 13.8h26a9.6 9.6 0 0 0 7.1-7H78.3a9.6 9.6 0 0 0 7 7zm0 14.1h26a9.6 9.6 0 0 0 7.1-7H78.3a9.6 9.6 0 0 0 7 7zM308.5 7h26a9.6 9.6 0 0 0 7-7h-40a9.6 9.6 0 0 0 7 7z"
-                        fill="currentColor"></path>
-                </svg>
-                <h4 class="mt-4 mb-0 fw-bold">Sign In</h4>
+<body class="bg-gray-50 min-h-screen flex items-center justify-center">
+    <div class="max-w-md w-full bg-white rounded-lg shadow-lg p-8 space-y-6">
+        <!-- Logo/Brand Section -->
+        <div class="text-center space-y-2">
+            <h1 class="text-2xl font-bold text-gray-900">Welcome Back</h1>
+            <p class="text-gray-500">Please sign in to continue</p>
+        </div>
+
+        <!-- Divider -->
+        <div class="relative my-6">
+            <div class="absolute inset-0 flex items-center">
+                <div class="w-full border-t border-gray-200"></div>
             </div>
-
-            <form>
-                <div class="mb-3">
-                    <input type="text" class="form-control" id="username" placeholder="Username" required>
-                </div>
-                <div class="mb-3">
-                    <input type="password" class="form-control" id="password" placeholder="Password" required>
-                </div>
-                <div class="mb-4 text-end">
-                    <a href="#" class="forgot-password">Forgot password?</a>
-                </div>
-                <button type="submit" class="btn btn-tesla">SIGN IN</button>
-            </form>
-
-            <div class="divider">
-                <div class="divider-line"></div>
-                <div class="divider-text">OR</div>
-                <div class="divider-line"></div>
-            </div>
-
-            <div id="g_id_onload" data-client_id="235997061849-bnl9eec9vggsco6gdq5i38n06abttcdi.apps.googleusercontent.com" data-callback="handleCredentialResponse">
-            </div>
-            <div class="g_id_signin" data-type="standard"></div>
-
-            <div class="mt-4 text-center">
-                <p class="mb-0">Don't have an account? <a href="#" class="create-account">Create Account</a></p>
+            <div class="relative flex justify-center text-sm">
+                <span class="px-2 bg-white text-gray-500">Sign in with</span>
             </div>
         </div>
+
+        <!-- Google Sign In Button Container -->
+        <div class="flex justify-center">
+            <div id="g_id_onload"
+                data-client_id=""
+                data-callback="handleCredentialResponse" data-auto_prompt="false">
+            </div>
+
+            <div class="g_id_signin" data-type="standard">
+            </div>
+        </div>
+
+        <!-- Additional Info -->
+        <p class="text-center text-sm text-gray-500 mt-8">
+            By continuing, you agree to our
+            <a href="#" class="text-blue-600 hover:text-blue-800">Terms of Service</a> and
+            <a href="#" class="text-blue-600 hover:text-blue-800">Privacy Policy</a>
+        </p>
     </div>
 
     <script>
@@ -174,11 +51,17 @@
             fetch("http://127.0.0.1:8000/google/auth/", {
                 method: "POST",
                 headers: { "Content-Type": "application/json" },
-                body: JSON.stringify({ access_token: response.credential })
+                body: JSON.stringify({ access_token: response.credential }),
             })
                 .then(res => res.json())
-                .then(data => console.log("Login Successful:", data))
-                .catch(error => console.error("Login Failed:", error));
+                .then(data => {
+                    console.log("Login Successful:", data);
+                    localStorage.setItem("access_token", data.access);
+                })
+                .catch(error => {
+                    console.error("Login Failed", error);
+                    // Add error handling UI feedback here
+                });
         }
     </script>
 </body>

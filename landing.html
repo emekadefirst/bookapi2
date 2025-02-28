@@ -1,0 +1,487 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AutoLease - Premium Car Leasing</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/3.3.3/tailwind.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+</head>
+
+<body class="font-sans antialiased text-gray-900 bg-gray-50">
+    <!-- Navigation -->
+    <nav class="bg-white shadow-md fixed w-full z-10">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-16">
+                <div class="flex items-center">
+                    <div class="flex-shrink-0 flex items-center">
+                        <span class="text-2xl font-bold text-blue-600">Auto<span
+                                class="text-gray-800">Lease</span></span>
+                    </div>
+                </div>
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="#" class="text-gray-700 hover:text-blue-600 transition">Home</a>
+                    <a href="#vehicles" class="text-gray-700 hover:text-blue-600 transition">Vehicles</a>
+                    <a href="#how-it-works" class="text-gray-700 hover:text-blue-600 transition">How It Works</a>
+                    <a href="#testimonials" class="text-gray-700 hover:text-blue-600 transition">Testimonials</a>
+                    <a href="#contact"
+                        class="bg-blue-600 text-white px-4 py-2 rounded-md hover:bg-blue-700 transition">Contact Us</a>
+                </div>
+                <div class="flex md:hidden items-center">
+                    <button id="mobile-menu-button" class="text-gray-600 hover:text-blue-600 focus:outline-none">
+                        <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M4 6h16M4 12h16M4 18h16"></path>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <!-- Mobile menu -->
+        <div id="mobile-menu" class="hidden md:hidden bg-white border-t">
+            <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3">
+                <a href="#"
+                    class="block px-3 py-2 text-gray-700 hover:text-blue-600 hover:bg-gray-50 rounded-md">Home</a>
+                <a href="#vehicles"
+                    class="block px-3 py-2 text-gray-700 hover:text-blue-600 hover:bg-gray-50 rounded-md">Vehicles</a>
+                <a href="#how-it-works"
+                    class="block px-3 py-2 text-gray-700 hover:text-blue-600 hover:bg-gray-50 rounded-md">How It
+                    Works</a>
+                <a href="#testimonials"
+                    class="block px-3 py-2 text-gray-700 hover:text-blue-600 hover:bg-gray-50 rounded-md">Testimonials</a>
+                <a href="#contact" class="block px-3 py-2 bg-blue-600 text-white rounded-md hover:bg-blue-700">Contact
+                    Us</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="pt-24 pb-12 md:pt-32 md:pb-24 bg-gradient-to-r from-blue-500 to-blue-700 text-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex flex-col md:flex-row items-center">
+                <div class="md:w-1/2 mb-8 md:mb-0">
+                    <h1 class="text-4xl md:text-5xl font-bold mb-4">Drive Your Dream Car Without Buying It</h1>
+                    <p class="text-xl md:text-2xl mb-8 text-blue-100">Flexible leasing options for premium vehicles. No
+                        long-term commitment, just pure driving pleasure.</p>
+                    <div class="flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-4">
+                        <a href="#vehicles"
+                            class="bg-white text-blue-600 px-6 py-3 rounded-md font-semibold hover:bg-gray-100 transition text-center">Browse
+                            Vehicles</a>
+                        <a href="#contact"
+                            class="bg-transparent border-2 border-white text-white px-6 py-3 rounded-md font-semibold hover:bg-white hover:text-blue-600 transition text-center">Get
+                            a Quote</a>
+                    </div>
+                </div>
+                <div class="md:w-1/2">
+                    <img src="/api/placeholder/600/400" alt="Luxury car"
+                        class="rounded-lg shadow-xl transform hover:scale-105 transition duration-500 w-full">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="py-12 md:py-24">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold mb-4">Why Choose AutoLease?</h2>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto">Experience premium car leasing with flexibility and
+                    convenience.</p>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="bg-white p-8 rounded-xl shadow-lg hover:shadow-xl transition">
+                    <div class="bg-blue-100 w-16 h-16 rounded-full flex items-center justify-center mb-6 mx-auto">
+                        <i class="fas fa-wallet text-blue-600 text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-4 text-center">No Down Payment</h3>
+                    <p class="text-gray-600 text-center">Start driving your dream car without a large upfront
+                        investment.</p>
+                </div>
+                <div class="bg-white p-8 rounded-xl shadow-lg hover:shadow-xl transition">
+                    <div class="bg-blue-100 w-16 h-16 rounded-full flex items-center justify-center mb-6 mx-auto">
+                        <i class="fas fa-exchange-alt text-blue-600 text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-4 text-center">Flexible Terms</h3>
+                    <p class="text-gray-600 text-center">Choose lease periods from 12 to 48 months based on your needs.
+                    </p>
+                </div>
+                <div class="bg-white p-8 rounded-xl shadow-lg hover:shadow-xl transition">
+                    <div class="bg-blue-100 w-16 h-16 rounded-full flex items-center justify-center mb-6 mx-auto">
+                        <i class="fas fa-tools text-blue-600 text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-4 text-center">Maintenance Included</h3>
+                    <p class="text-gray-600 text-center">Full maintenance package included with every lease agreement.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Vehicle Showcase -->
+    <section id="vehicles" class="py-12 md:py-24 bg-gray-100">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold mb-4">Our Premium Fleet</h2>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto">Explore our selection of luxury and performance
+                    vehicles available for lease.</p>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Car 1 -->
+                <div class="bg-white rounded-xl overflow-hidden shadow-lg hover:shadow-xl transition">
+                    <div class="relative">
+                        <img src="/api/placeholder/400/250" alt="Luxury Sedan" class="w-full h-64 object-cover">
+                        <div class="absolute top-4 right-4 bg-blue-600 text-white px-3 py-1 rounded-full">Premium</div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2">Mercedes-Benz E-Class</h3>
+                        <div class="flex items-center mb-4">
+                            <span class="text-yellow-500 mr-1"><i class="fas fa-star"></i></span>
+                            <span class="text-yellow-500 mr-1"><i class="fas fa-star"></i></span>
+                            <span class="text-yellow-500 mr-1"><i class="fas fa-star"></i></span>
+                            <span class="text-yellow-500 mr-1"><i class="fas fa-star"></i></span>
+                            <span class="text-yellow-500 mr-1"><i class="fas fa-star"></i></span>
+                            <span class="text-gray-500 ml-2">(24 reviews)</span>
+                        </div>
+                        <div class="flex justify-between mb-4">
+                            <div>
+                                <p class="text-gray-500 text-sm">Starting from</p>
+                                <p class="text-2xl font-bold">$699<span class="text-sm text-gray-500">/month</span></p>
+                            </div>
+                            <div class="flex flex-col items-end justify-end">
+                                <span
+                                    class="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium bg-green-100 text-green-800">Available</span>
+                            </div>
+                        </div>
+                        <a href="#contact"
+                            class="block text-center bg-blue-600 text-white py-2 rounded-md hover:bg-blue-700 transition">Lease
+                            Now</a>
+                    </div>
+                </div>
+
+                <!-- Car 2 -->
+                <div class="bg-white rounded-xl overflow-hidden shadow-lg hover:shadow-xl transition">
+                    <div class="relative">
+                        <img src="/api/placeholder/400/250" alt="SUV" class="w-full h-64 object-cover">
+                        <div class="absolute top-4 right-4 bg-blue-600 text-white px-3 py-1 rounded-full">Popular</div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2">BMW X5</h3>
+                        <div class="flex items-center mb-4">
+                            <span class="text-yellow-500 mr-1"><i class="fas fa-star"></i></span>
+                            <span class="text-yellow-500 mr-1"><i class="fas fa-star"></i></span>
+                            <span class="text-yellow-500 mr-1"><i class="fas fa-star"></i></span>
+                            <span class="text-yellow-500 mr-1"><i class="fas fa-star"></i></span>
+                            <span class="text-yellow-500 mr-1"><i class="fas fa-star-half-alt"></i></span>
+                            <span class="text-gray-500 ml-2">(18 reviews)</span>
+                        </div>
+                        <div class="flex justify-between mb-4">
+                            <div>
+                                <p class="text-gray-500 text-sm">Starting from</p>
+                                <p class="text-2xl font-bold">$849<span class="text-sm text-gray-500">/month</span></p>
+                            </div>
+                            <div class="flex flex-col items-end justify-end">
+                                <span
+                                    class="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium bg-yellow-100 text-yellow-800">Limited</span>
+                            </div>
+                        </div>
+                        <a href="#contact"
+                            class="block text-center bg-blue-600 text-white py-2 rounded-md hover:bg-blue-700 transition">Lease
+                            Now</a>
+                    </div>
+                </div>
+
+                <!-- Car 3 -->
+                <div class="bg-white rounded-xl overflow-hidden shadow-lg hover:shadow-xl transition">
+                    <div class="relative">
+                        <img src="/api/placeholder/400/250" alt="Sports Car" class="w-full h-64 object-cover">
+                        <div class="absolute top-4 right-4 bg-blue-600 text-white px-3 py-1 rounded-full">Luxury</div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2">Porsche 911</h3>
+                        <div class="flex items-center mb-4">
+                            <span class="text-yellow-500 mr-1"><i class="fas fa-star"></i></span>
+                            <span class="text-yellow-500 mr-1"><i class="fas fa-star"></i></span>
+                            <span class="text-yellow-500 mr-1"><i class="fas fa-star"></i></span>
+                            <span class="text-yellow-500 mr-1"><i class="fas fa-star"></i></span>
+                            <span class="text-yellow-500 mr-1"><i class="fas fa-star"></i></span>
+                            <span class="text-gray-500 ml-2">(32 reviews)</span>
+                        </div>
+                        <div class="flex justify-between mb-4">
+                            <div>
+                                <p class="text-gray-500 text-sm">Starting from</p>
+                                <p class="text-2xl font-bold">$1,299<span class="text-sm text-gray-500">/month</span>
+                                </p>
+                            </div>
+                            <div class="flex flex-col items-end justify-end">
+                                <span
+                                    class="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium bg-green-100 text-green-800">Available</span>
+                            </div>
+                        </div>
+                        <a href="#contact"
+                            class="block text-center bg-blue-600 text-white py-2 rounded-md hover:bg-blue-700 transition">Lease
+                            Now</a>
+                    </div>
+                </div>
+            </div>
+            <div class="text-center mt-12">
+                <a href="#" class="inline-flex items-center text-blue-600 font-semibold hover:text-blue-800 transition">
+                    View All Vehicles
+                    <svg class="ml-2 w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M17 8l4 4m0 0l-4 4m4-4H3"></path>
+                    </svg>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- How It Works -->
+    <section id="how-it-works" class="py-12 md:py-24">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold mb-4">How Leasing Works</h2>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto">Simple, transparent, and hassle-free leasing process.
+                </p>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <div class="text-center">
+                    <div
+                        class="bg-blue-600 w-16 h-16 rounded-full flex items-center justify-center text-white text-2xl font-bold mx-auto mb-6">
+                        1</div>
+                    <h3 class="text-xl font-bold mb-2">Choose Your Vehicle</h3>
+                    <p class="text-gray-600">Browse our premium selection and find your perfect match.</p>
+                </div>
+                <div class="text-center">
+                    <div
+                        class="bg-blue-600 w-16 h-16 rounded-full flex items-center justify-center text-white text-2xl font-bold mx-auto mb-6">
+                        2</div>
+                    <h3 class="text-xl font-bold mb-2">Select Your Terms</h3>
+                    <p class="text-gray-600">Pick the lease duration and mileage that suits your lifestyle.</p>
+                </div>
+                <div class="text-center">
+                    <div
+                        class="bg-blue-600 w-16 h-16 rounded-full flex items-center justify-center text-white text-2xl font-bold mx-auto mb-6">
+                        3</div>
+                    <h3 class="text-xl font-bold mb-2">Quick Approval</h3>
+                    <p class="text-gray-600">Fast credit checks and approvals within 24 hours.</p>
+                </div>
+                <div class="text-center">
+                    <div
+                        class="bg-blue-600 w-16 h-16 rounded-full flex items-center justify-center text-white text-2xl font-bold mx-auto mb-6">
+                        4</div>
+                    <h3 class="text-xl font-bold mb-2">Drive Away</h3>
+                    <p class="text-gray-600">Pick up your vehicle and enjoy the open road.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section id="testimonials" class="py-12 md:py-24 bg-gray-100">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold mb-4">What Our Customers Say</h2>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto">Don't just take our word for it. Here's what our
+                    clients have to say.</p>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="bg-white p-8 rounded-xl shadow-lg">
+                    <div class="flex items-center mb-4">
+                        <div class="mr-4">
+                            <div class="bg-blue-200 w-12 h-12 rounded-full flex items-center justify-center">
+                                <span class="text-blue-600 font-bold text-lg">JD</span>
+                            </div>
+                        </div>
+                        <div>
+                            <h4 class="font-bold">John Doe</h4>
+                            <p class="text-gray-500 text-sm">BMW X5 Lessee</p>
+                        </div>
+                    </div>
+                    <div class="flex text-yellow-500 mb-2">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p class="text-gray-600 italic">"AutoLease made getting my dream BMW so easy. The process was
+                        smooth, and the team was incredibly helpful. Best leasing experience I've had!"</p>
+                </div>
+                <div class="bg-white p-8 rounded-xl shadow-lg">
+                    <div class="flex items-center mb-4">
+                        <div class="mr-4">
+                            <div class="bg-blue-200 w-12 h-12 rounded-full flex items-center justify-center">
+                                <span class="text-blue-600 font-bold text-lg">JS</span>
+                            </div>
+                        </div>
+                        <div>
+                            <h4 class="font-bold">Jane Smith</h4>
+                            <p class="text-gray-500 text-sm">Mercedes E-Class Lessee</p>
+                        </div>
+                    </div>
+                    <div class="flex text-yellow-500 mb-2">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                    <p class="text-gray-600 italic">"I was hesitant about leasing at first, but the team at AutoLease
+                        explained everything clearly. Now I'm driving a car I never thought I could afford!"</p>
+                </div>
+                <div class="bg-white p-8 rounded-xl shadow-lg">
+                    <div class="flex items-center mb-4">
+                        <div class="mr-4">
+                            <div class="bg-blue-200 w-12 h-12 rounded-full flex items-center justify-center">
+                                <span class="text-blue-600 font-bold text-lg">RM</span>
+                            </div>
+                        </div>
+                        <div>
+                            <h4 class="font-bold">Robert Miller</h4>
+                            <p class="text-gray-500 text-sm">Porsche 911 Lessee</p>
+                        </div>
+                    </div>
+                    <div class="flex text-yellow-500 mb-2">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p class="text-gray-600 italic">"The maintenance package included with my lease has saved me
+                        thousands. AutoLease thinks of everything so I can just enjoy driving my Porsche."</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Call to Action -->
+    <section class="py-12 md:py-24 bg-blue-600 text-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center">
+                <h2 class="text-3xl md:text-4xl font-bold mb-4">Ready to Drive Your Dream Car?</h2>
+                <p class="text-xl text-blue-100 max-w-3xl mx-auto mb-8">Contact us today and our leasing specialists
+                    will help you find the perfect vehicle.</p>
+                <a href="#contact"
+                    class="inline-block bg-white text-blue-600 px-8 py-4 rounded-md font-semibold text-lg hover:bg-gray-100 transition">Get
+                    Started Now</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Form -->
+    <section id="contact" class="py-12 md:py-24">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
+                <div>
+                    <h2 class="text-3xl md:text-4xl font-bold mb-4">Contact Us</h2>
+                    <p class="text-xl text-gray-600 mb-8">Fill out the form below and one of our leasing specialists
+                        will get in touch with you shortly.</p>
+
+                    <div class="mb-8">
+                        <h3 class="text-xl font-bold mb-4">Our Office</h3>
+                        <div class="flex items-start mb-4">
+                            <div class="text-blue-600 mr-4">
+                                <i class="fas fa-map-marker-alt"></i>
+                            </div>
+                            <p class="text-gray-600">123 Main Street, Suite 400<br>Metropolis, NY 10001</p>
+                        </div>
+                        <div class="flex items-start mb-4">
+                            <div class="text-blue-600 mr-4">
+                                <i class="fas fa-phone"></i>
+                            </div>
+                            <p class="text-gray-600">(555) 123-4567</p>
+                        </div>
+                        <div class="flex items-start">
+                            <div class="text-blue-600 mr-4">
+                                <i class="fas fa-envelope"></i>
+                            </div>
+                            <p class="text-gray-600">info@autolease.com</p>
+                        </div>
+                    </div>
+
+                    <div>
+                        <h3 class="text-xl font-bold mb-4">Business Hours</h3>
+                        <div class="flex justify-between mb-2">
+                            <span class="text-gray-600">Monday - Friday:</span>
+                            <span class="text-gray-800 font-medium">9:00 AM - 7:00 PM</span>
+                        </div>
+                        <div class="flex justify-between mb-2">
+                            <span class="text-gray-600">Saturday:</span>
+                            <span class="text-gray-800 font-medium">10:00 AM - 5:00 PM</span>
+                        </div>
+                        <div class="flex justify-between">
+                            <span class="text-gray-600">Sunday:</span>
+                            <span class="text-gray-800 font-medium">Closed</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bg-white p-8 rounded-xl shadow-lg">
+                    <form>
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
+                            <div>
+                                <label for="first-name" class="block text-sm font-medium text-gray-700 mb-1">First
+                                    Name</label>
+                                <input type="text" id="first-name"
+                                    class="w-full px-4 py-2 border border-gray-300 rounded-md focus:ring-blue-500 focus:border-blue-500">
+                            </div>
+                            <div>
+                                <label for="last-name" class="block text-sm font-medium text-gray-700 mb-1">Last
+                                    Name</label>
+                                <input type="text" id="last-name"
+                                    class="w-full px-4 py-2 border border-gray-300 rounded-md focus:ring-blue-500 focus:border-blue-500">
+                            </div>
+                        </div>
+                        <div class="mb-6">
+                            <label for="email" class="block text-sm font-medium text-gray-700 mb-1">Email
+                                Address</label>
+                            <input type="email" id="email"
+                                class="w-full px-4 py-2 border border-gray-300 rounded-md focus:ring-blue-500 focus:border-blue-500">
+                        </div>
+                        <div class="mb-6">
+                            <label for="phone" class="block text-sm font-medium text-gray-700 mb-1">Phone Number</label>
+                            <input type="tel" id="phone"
+                                class="w-full px-4 py-2 border border-gray-300 rounded-md focus:ring-blue-500 focus:border-blue-500">
+                        </div>
+                        <div class="mb-6">
+                            <label for="vehicle" class="block text-sm font-medium text-gray-700 mb-1">Interested
+                                Vehicle</label>
+                            <select id="vehicle"
+                                class="w-full px-4 py-2 border border-gray-300 rounded-md focus:ring-blue-500 focus:border-blue-500">
+                                <option value="">Select a vehicle</option>
+                                <option value="mercedes">Mercedes-Benz E-Class</option>
+                                <option value="bmw">BMW X5</option>
+                                <option value="porsche">Porsche 911</option>
+                                <option value="other">Other</option>
+                            </select>
+                        </div>
+                        <div class="mb-6">
+                            <label for="message" class="block text-sm font-medium text-gray-700 mb-1">Additional
+                                Information</label>
+                            <textarea id="message" rows="4"
+                                class="w-full px-4 py-2 border border-gray-300 rounded-md focus:ring-blue-500 focus:border-blue-500"></textarea>
+                        </div>
+                        <button type="submit"
+                            class="w-full bg-blue-600 text-white py-3 rounded-md font-semibold hover:bg-blue-700 transition">Submit
+                            Request</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8 mb-8">
+                <div>
+                    <h3 class="text-2xl font-bold mb-4">Auto<span class="text-blue-400">Lease</span></h3>
+                    <p class="text-gray-400 mb-4">Premium car leasing solutions tailored to your lifestyle and budget.
+                    </p>
+                    <div class="flex space-x-4">
+                        <a href="#" class="text-gray-400 hover:text-white transition"><i
+                                class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="text-gray-400
